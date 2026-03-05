@@ -23,11 +23,12 @@ def cook_food(prompt):
 # I will write this function later 
 
 if __name__=="__main__":
-    API_KEY = "AIzaSyBPi6oSWgOt8Yod1WGzvQD1hkDeJeqzjq8"   # YOUR API
+    API_KEY = ""   # YOUR API
     # initialize the client
     client = genai.Client(api_key="API_KEY")
     # title 
     st.title("Recipe Generator")
     prompt = st.chat_input("What's cooking?")
     cook_food(prompt)
+
 
