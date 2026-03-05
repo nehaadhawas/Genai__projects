@@ -25,10 +25,11 @@ def generate_poetry(prompt):
 
 
 if __name__ == "__main__":
-    API_KEY = "YOUR_API_KEY"   # ⚠️ Never expose real API keys in public code
+    API_KEY = "YOUR_API_KEY"   
     client = genai.Client(api_key=API_KEY)
 
     st.title("✨ Poetry Generator")
     prompt = st.chat_input("What should I write a poem about?")
     generate_poetry(prompt)
+
 
